@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
     padding: 0;
@@ -6,9 +6,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-
 
 body {
     width: 100%;
@@ -22,24 +21,23 @@ body {
     padding: 0px 30px;
 }
 
-.container header{
+.container header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container header .logo h1{
+.container header .logo h1 {
     font-size: 26px;
     color: #222;
     padding: 35px 0px;
     font-family: url("fonts/static/Inter-ExtraBold.ttf");
 }
 
-.container header .nav ul{
+.container header .nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .container header .nav ul li {
@@ -49,11 +47,11 @@ body {
     padding-right: 0px;
 }
 
-.container header .nav ul li a{
+.container header .nav ul li a {
     color: rgb(28, 48, 85);
     font-size: 15px;
 }
-.container header .nav ul li a:hover{
+.container header .nav ul li a:hover {
     color: rgb(46, 100, 201);
 }
 main {
@@ -66,12 +64,12 @@ main .content1 {
     margin-right: 20px;
 }
 
-main .content1 img{
+main .content1 img {
     max-width: 600px;
 }
 
 main .content1 .cols {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
 }
 main .content1 .cols .head {
@@ -87,11 +85,10 @@ main .content1 .cols .texts {
     max-width: 320px;
 }
 
-main .content1 .cols .texts  p {
+main .content1 .cols .texts p {
     font-size: 16px;
     word-spacing: 4px;
     padding: 20px 0px;
-
 }
 
 main .content1 .cols .texts button {
@@ -135,10 +132,8 @@ main .content2 .news-heading p {
 
 main .content2 .news-heading hr {
     margin-top: 20px;
-    height: .1px;
+    height: 0.1px;
 }
-
-
 
 .tech-news {
     width: 100%;
@@ -152,14 +147,13 @@ main .content2 .news-heading hr {
     height: 120px;
 }
 
-.tech-news .posts img{
+.tech-news .posts img {
     width: 90px;
 }
 
 .tech-news .posts .content {
     margin-left: 10px;
 }
-
 
 .tech-news .posts .content h2 {
     font-size: 25px;
@@ -170,40 +164,17 @@ main .content2 .news-heading hr {
     padding: 5px 0;
 }
 
-
 .tech-news .posts .content p {
     font-size: 14px;
     padding: 5px 0;
 }
 
+.nav-icon {
+    display: none !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-@media (max-width: 700px) {
-      
-    .container {
-        max-width: 700px;
-        padding: 0px;
-    }
-    header {
-        position: relative;
-    }
-     
+@media (max-width: 1024px) {
+    /*      
     header .nav ul{
        display: flex;
        flex-direction: column;
@@ -224,13 +195,38 @@ main .content2 .news-heading hr {
 
 
       
+    }*/
+
+    .container {
+        margin: 0;
+    }
+
+    .container header {
+        width: 600px !important;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .container .logo{
+        margin-left: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: min-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .content1 .cols {
+        display: flex;
+        flex-direction: column;
     }
     main .content1 {
         width: 100%;
-    }
-    main .content1 .cols {
-        display: flex; 
-        flex-direction: column;
     }
     main .content1 .cols .head {
         width: 100%;
@@ -239,17 +235,36 @@ main .content2 .news-heading hr {
     }
 
     main .content1 .cols .texts {
-        width: 100%;
-       
-    } 
-
-
-   
-    main {
-        display: flex;
-        flex-direction: column;
+        max-width: 100%;
     }
 
+    main .content2 {
+        margin-top: 52px;
+        margin-bottom: 52px;
+        min-width: 100%;
+        padding: 20px;
+    }
 
+    main .content2 h1 {
+        padding-left: 20px;
+        text-align: left;
+    }
 
-} */
+    .tech-news {
+        flex-direction: column;
+        /* max-width: 400px; */
+        width: 600px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .tech-news .posts {
+        min-width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    .tech-news .posts .content {
+        min-width: 100%;
+    }
+}
