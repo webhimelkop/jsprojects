@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png"
+        />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <title>Frontend Mentor | News homepage</title>
+        <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-    
-  <div class="container">  
-  
-    <header>
-        <div class="logo">
-          <h1>WEB3</h1>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Frontend Mentor | News homepage</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <h1>WEB3</h1>
+                </div>
+                <i class="fa-solid fa-bars" id="nav-icon"></i>
+                <div class="nav" style="transform: translateX(100%)">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main>
+                <div class="content1">
+                    <img src="images/image-web-3-desktop.jpg" />
+                    <div class="cols">
+                        <div class="head">
+                            <h1>The Bright Future of Web 3.0?</h1>
+                        </div>
+                        <div class="texts">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Eum vero assumenda omnis ipsam
+                                quidem porro tempore. Tempora, fugiat placeat?
+                                Dolor.
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content2">
+                    <h1>News</h1>
+
+                    <div class="news-heading">
+                        <h3>Hydrogen Vs Electronic cars</h3>
+                        <p>Will hydrogren-fueled cars ever catch up EVs?</p>
+                        <hr />
+                    </div>
+                    <div class="news-heading">
+                        <h3>Hydrogen Vs Electronic cars</h3>
+                        <p>Will hydrogren-fueled cars ever catch up EVs?</p>
+                        <hr />
+                    </div>
+                    <div class="news-heading">
+                        <h3>Hydrogen Vs Electronic cars</h3>
+                        <p>Will hydrogren-fueled cars ever catch up EVs?</p>
+                    </div>
+                </div>
+            </main>
+
+            <div class="tech-news">
+                <div class="posts">
+                    <img src="images/image-retro-pcs.jpg" />
+
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Reviving Retro PCs</h3>
+                        <p>
+                            What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <img src="images/image-top-laptops.jpg" />
+
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Top 10 laptops now</h3>
+                        <p>
+                            What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <img src="images/image-gaming-growth.jpg" />
+
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Game khelun jibon bachan</h3>
+                        <p>
+                            What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <i class="fa-solid fa-bars"></i>
-        <div class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categoris</a></li>
-        </ul>
-      </div>
-    </header>
 
+        <script src="./script.js"></script>
 
-    <main>
-     
-      <div class="content1">
-
-        <img src="image-web-3-desktop.jpg">
-        <div class="cols"> 
-          <div class="head">
-            <h1>The Bright Future of Web 3.0? </h1>  
-          </div>  
-          <div class="texts">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vero assumenda omnis ipsam quidem porro tempore. Tempora, fugiat placeat? Dolor.</p>
-            <button>READ MORE</button>
-          </div>
-      </div>
-      </div>
-
-      <div class="content2">
-        
-      
-        <h1>News</h1>
-
-
-        <div class="news-heading"> 
-            <h3>Hydrogen Vs Electronic cars</h3>
-            <p>Will hydrogren-fueled cars ever catch up EVs? </p>
-          <hr> 
-        </div>
-        <div class="news-heading"> 
-          <h3>Hydrogen Vs Electronic cars</h3>
-          <p>Will hydrogren-fueled cars ever catch up EVs? </p>
-        <hr> 
-      </div>
-      <div class="news-heading"> 
-        <h3>Hydrogen Vs Electronic cars</h3>
-        <p>Will hydrogren-fueled cars ever catch up EVs? </p>
-    </div>
-
-   </div>
-
-
-    </main>
-
-    <div class="tech-news">
-       
-      <div class="posts">
-        <img src="image-retro-pcs.jpg">
-
-        <div class="content">
-          <h2>01</h2>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </div>
-
-
-            
-      <div class="posts">
-        <img src="image-top-laptops.jpg">
-
-        <div class="content">
-          <h2>02</h2>
-          <h3>Top 10 laptops now</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </div>
-
-            
-      <div class="posts">
-        <img src="image-gaming-growth.jpg">
-
-        <div class="content">
-          <h2>03</h2>
-          <h3>Game khelun jibon bachan</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-
-
-
-
-  </div>
-  
-  <!-- <div class="attribution">
+        <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+    </body>
 </html>
